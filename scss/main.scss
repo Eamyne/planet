@@ -38,12 +38,8 @@ body {
 
 header{
     background-color: $text_color;
-    margin: 0;
+    margin-bottom: 10px;
     z-index: 999;
-}
-
-hr{
-    display: none;
 }
 
 %h_mother{
@@ -53,6 +49,11 @@ hr{
 %h_main{
     @extend %h_mother;
     font-weight: bold;
+}
+
+hr{
+    display: block;
+    border-color: $text_color;
 }
 
 h2{
@@ -276,6 +277,10 @@ time{
             }
 	}
     }
+    
+    header{
+        margin-bottom: 30px;
+    }
 
    .logo-small{
         margin: 0px 0px 0px 5px;
@@ -306,11 +311,6 @@ time{
     
     .logo-small{
         display: none;
-    }
-    
-    hr{
-        display: block;
-        border-color: $text_color;
     }
  
     .logo-small .logo-medium{
